@@ -1,0 +1,15 @@
+.red {
+    background-color: aqua;
+    height: 344px;
+    color: blueviolet;
+}
+
+.green {
+    background-color: rgb(121, 106, 88);
+    color: brown;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}

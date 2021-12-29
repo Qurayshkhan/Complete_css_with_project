@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            height: 122px;
+            background-color: black;
+        }
+        
+        main {
+            background-color: aquamarine;
+            height: 899px;
+        }
+        
+        .progress {
+            background-color: rgb(212, 24, 14);
+            height: 3px;
+            animation: load 1s ease-in-out 1;
+        }
+        
+        @keyframes load {
+            0% {
+                width: 0%;
+            }
+            50% {
+                width: 50%;
+            }
+            100% {
+                width: 100%;
+            }
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* img {
+            animation: rotate is ease-in infinite;
+        } */
+        
+        img {
+            display: block;
+            margin: auto;
+            transform: translate(7vw);
+        }
+        
+        .slider {
+            background-color: green;
+            height: 533px;
+            width: 100vw;
+            overflow: hidden;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .img1 {
+            transform: translate(0vw);
+        }
+        
+        .img2 {
+            transform: translate(100vw);
+        }
+        
+        .img3 {
+            transform: translate(-100vw);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+
+    <header></header>
+    <main>
+
+        <!-- <img src="16.jpg" alt="" width="20%"> -->
+        <div class="slider">
+            <img class="img1" src="16.jpg" alt="" width="70%">
+            <img class="img2" src="16.jpg" alt="" width="70%">
+            <img class="img3" src="16.jpg" alt="" width="70%">
+        </div>
+    </main>
+</body>
+
+</html>
